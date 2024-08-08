@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicas Programación</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Ejercicio 1 -->
+    <div>
+      <form action="#" method="post">
+        <label for="nombre"><strong>Nombre:</strong></label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="edad"><strong>Edad:</strong></label>
+        <input type="number" id="edad" name="edad" />
+
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <hr />
+
+    <!-- Ejercicio 2 -->
+    <div>
+      <form action="#" method="post">
+        <label for="email"><strong>Email:</strong></label>
+        <input type="email" id="email" name="email" />
+
+        <label for="password1"><strong>Contraseña:</strong></label>
+        <input type="password" id="pw1" name="password1" />
+
+        <label for="password2"
+          ><strong>Ingrese nuevamente su contraseña:</strong></label
+        >
+        <input type="password" id="pw2" name="password2" />
+
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <hr />
+
+    <!-- Ejercicio 3 -->
+    <form action="#" method="post">
+      <label for="name"><strong>Nombre:</strong></label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email"><strong>Email:</strong></label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="dni"><strong>DNI:</strong></label>
+      <input type="text" id="dni" name="dni" required />
+
+      <label for="curriculum"><strong>Curriculum:</strong></label>
+      <textarea id="curriculum" name="curriculum" rows="5" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <hr />
+    <!-- Ejercicio 4 -->
+    <div>
+      <form action="#" method="post">
+        <label for="email"><b>Email:</b></label>
+        <br />
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="password"><b>Clave:</b></label>
+        <br />
+        <input type="password" id="password" name="password" required />
+        <br />
+        <label><b>Películas:</b></label>
+        <br />
+        <input type="checkbox" id="movie1" name="movies" value="Pelicula1" />
+        <label for="movie1">Pelicula 1</label>
+        <br />
+        <input type="checkbox" id="movie2" name="movies" value="Pelicula2" />
+        <label for="movie2">Pelicula 2</label>
+        <br />
+        <input type="checkbox" id="movie3" name="movies" value="Pelicula3" />
+        <label for="movie3">Pelicula 3</label>
+        <br />
+        <input type="checkbox" id="movie4" name="movies" value="Pelicula4" />
+        <label for="movie4">Pelicula 4</label>
+        <br />
+        <br />
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <br />
+    <hr />
+    <!-- Ejercicio 5 -->
+    <div>
+      <form action="#" method="post">
+        <label><b>¿Cuál sistema operativo utiliza más?</b></label>
+        <br />
+        <input type="radio" id="linux" name="os" value="linux" />
+        <label for="linux">Linux</label>
+        <br />
+        <input type="radio" id="windows" name="os" value="windows" />
+        <label for="windows">Windows</label>
+        <br />
+        <br />
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <br />
+    <hr />
+    <!-- Ejercicio 6 -->
+    <div>
+      <form action="#" method="post">
+        <label for="email-select"
+          ><b>Selecciona uno o varios correos electrónicos:</b></label
+        >
+        <br />
+        <select id="email-select" name="emails" multiple>
+          <option value="email1@ejemplo.com">testemail1@ejemplo.com</option>
+          <option value="testemail2@ejemplo.com">testemail2@ejemplo.com</option>
+          <option value="testemail3@ejemplo.com">testemail3@ejemplo.com</option>
+          <option value="testemail4@ejemplo.com">testemail4@ejemplo.com</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <br />
+    <hr />
+    <!-- Ejercicio 7 -->
+    <div>
+      <form action="#" method="post">
+        <label for="country-select"><b>Selecciona un país:</b></label>
+        <br />
+        <select id="country-select" name="country">
+          <optgroup label="América">
+            <option value="argentina">Argentina</option>
+            <option value="brazil">Brasil</option>
+            <option value="canada">Canadá</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="usa">Estados Unidos</option>
+          </optgroup>
+          <optgroup label="Europa">
+            <option value="france">Francia</option>
+            <option value="germany">Alemania</option>
+            <option value="italy">Italia</option>
+            <option value="spain">España</option>
+            <option value="uk">Reino Unido</option>
+            <option value="netherlands">Países Bajos</option>
+            <option value="sweden">Suecia</option>
+          </optgroup>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <br />
+    <hr />
+    <!-- Ejercicio 8 -->
+    <div>
+      <form action="#" method="post">
+        <label for="name"><b>Nombre:</b></label>
+        <br />
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="rating"><b>¿Cómo calificaría el sitio?</b></label>
+        <br />
+        <select id="rating" name="rating" required>
+          <option value="excellent">Excelente</option>
+          <option value="very_good">Muy Bueno</option>
+          <option value="good">Bueno</option>
+          <option value="fair">Regular</option>
+          <option value="poor">Malo</option>
+        </select>
+        <br />
+        <br />
+        <input type="submit" value="Enviar formulario" />
+      </form>
+    </div>
+    <br />
+    <hr />
+  </body>
+</html>
